@@ -7,9 +7,13 @@ The minimum storage capacity of the USB-C stick needed can be calculated as foll
 The main folder layout of the USB stick would be:
 
 qemu
-iso
+
+iso-files
+
 	\ android
+ 
 	\ linux
+ 
 
 In addition there is file named autoexec.bat
 
