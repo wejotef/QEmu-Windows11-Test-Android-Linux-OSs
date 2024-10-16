@@ -20,10 +20,9 @@ In addition there is file named autoexec.bat
 
 Because on Windows 11 the AutoRun feature is disabled by default you have to add a batch file to Windows startup that runs the autoexec.bat file housed on the USB stick. Here's how you can do it:
 
-1. Create a Batch File named run_usb_autoexec.bat what contains following lines:
+1. Create a Batch File named run_usb_autoexec.bat what contains following line:
 
-@echo off
-start /d "E:\path\to\usb\stick" autoexec.bat 2>nul
+@echo off & start /d "E:\path\to\usb\stick" autoexec.bat 2>nul
 
 Important
 Replace "E:\path\to\usb\stick" with the actual path to your USB stick.
