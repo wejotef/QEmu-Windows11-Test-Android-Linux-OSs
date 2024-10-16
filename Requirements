@@ -1,10 +1,1 @@
-A Windows 11 24H2 what comes with Hyper-V feature what is case with the following editions of Windows 11:
-
-Windows 11 Pro
-Windows 11 Enterprise
-Windows 11 Education
-
-QMEMU v9.x 64-bit version
-
-Intel HAXM driver if computer is equipped with Intel CPU that supports HAXM
 
