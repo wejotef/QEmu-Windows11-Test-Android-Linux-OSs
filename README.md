@@ -1,4 +1,5 @@
-The idea of this project is to have a test environment on a USB stick that allows both Android OSs and Linux OSs to run without the need to set up a dual-boot on the Windows computer using QEMU (Quick EMUlator) what is a free and open-source emulator and virtualizer that can emulate a full system, including a processor, memory, hence allowing you to run a guest operating system within it.
+The idea of this project is to have a complete test environment on a USB stick that allows both Android OSs and Linux OSs to run without the need to set up a dual-boot on the Windows computer using QEMU (Quick EMUlator) what is a free and open-source emulator and virtualizer that can emulate a full system, including a processor, memory, hence allowing you to run a guest operating system within it.
+Virtualization allows to run operating systems without having to change the partitioning of the hard disks. This minimizes the risk of making mistakes during these hard disk operations and accidentally deleting data.
 
 So you need a high-speed USB-C stick on which a copy of QEMU and the .ISO file of the OSs to be tested are installed.
 
