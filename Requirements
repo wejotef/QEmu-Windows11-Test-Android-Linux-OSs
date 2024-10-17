@@ -1,1 +1,41 @@
 
+SOFTWARES:
+
+
+QEMU (Quick Emulator) v9.x what is a free and open-source virtualization and emulation platform. It can emulate various hardware architectures, e.g. Android and/or Linux, allowing users to run multiple operating systems on a single hardware host. It's a Type 2 Hypervisor (Hosted): Think of it as a way to create a virtual computer within your computer.
+
+In contrast Hyper-V is a virtualization technology developed by Microsoft. It's a Type 1 Hypervisor (Bare Metal): It allows you to create and manage virtual machines on your Windows system. Essentially, it lets you run multiple operating systems on a single physical computer by creating virtual versions of the hardware.The Hyper-V feature is available in the following editions of Windows 11:
+
+Windows 11 Pro
+Windows 11 Enterprise
+Windows 11 Education
+  
+
+QEMU can conflict with Hyper-V because both try to use the same hardware virtualization features. When QEMU is running, it can interfere with Hyper-V's ability to access these features, leading to performance issues or instability. Stopping Hyper-V before firing up QEMU ensures there's no competition for those resources. You can temporarily disable Hyper-V by using the following PowerShell command: Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All and reboot computer. 
+
+
+To run Android OSs in QEMU basically requires Intel Hardware Acceleration Manager (HAXM), what is a Type 2 Hypervisor that uses Intel Virtualization Technology (Intel VT) to speed up Android development. It allows for faster emulation of Android devices on your computer by leveraging hardware virtualization features. HAXM is intolerant to Microsoft's Hyper-V.
+
+What Intel processors support HAXM?
+
+Intel HAXM supports the following Intel processors that have Intel VT-x (Virtualization Technology)
+:
+
+Intel Core i3/i5/i7/i9 series
+Intel Xeon processors
+
+These processors must have Intel VT-x enabled in the BIOS/UEFI settings to use HAXM
+
+
+HARDWARE: 
+
+To run a virtual machine (VM) flawlessly with QEMU, you should aim for the following minimum hardware specifications:
+
+Processor: Intel i3/i5/i7/i9 or AMD Ryzen 1k-7k series (fully supported). 
+For smooth performance running a QEMU VM, having at least 4 cores is a good baseline. More cores can help. If you've got an 8-core CPU or better, you're in excellent shape for virtualization.
+
+RAM: At least 4 GB (8 GB or more is recommended for better performance).
+
+Storage: A 64 GB or larger USB 3.x flash drive - e.g. SanDisk Extreme Pro SDCZ880 - recommended for faster performance.
+
+
